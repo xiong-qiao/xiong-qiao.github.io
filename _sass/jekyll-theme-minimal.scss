@@ -217,7 +217,7 @@ footer {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
-    margin:0 0 20px;
+    // margin:0 0 20px;
   }
 
   header a small {
@@ -269,4 +269,31 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+div.tableContainer {
+  display: table;
+}
+
+div.tableRow {
+  display: table-row;
+}
+
+span.tableText {
+  display: table-cell;
+  vertical-align: top;
+}
+
+div.tableRow img {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0px 20px 10px 0px;
+}
+
+p.educationTable {
+  line-height: 2.5;
+}
+
+p.workTable {
+  line-height: 1.5;
 }

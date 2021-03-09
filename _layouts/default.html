@@ -1,65 +1,131 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-US">
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <title>Xiong's homepage</title>
+  <meta name="generator" content="Jekyll v3.9.0" />
+  <meta property="og:title" content="Minimal theme" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="Minimal is a theme for GitHub Pages." />
+  <meta property="og:description" content="Minimal is a theme for GitHub Pages." />
+  <link rel="canonical" href="http://localhost:4000/" />
+  <meta property="og:url" content="http://localhost:4000/" />
+  <meta property="og:site_name" content="Minimal theme" />
+  <script type="application/ld+json">
+{"description":"Minimal is a theme for GitHub Pages.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"}},"@type":"WebSite","url":"http://localhost:4000/","headline":"Minimal theme","name":"Minimal theme","@context":"https://schema.org"}</script>
+  <!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=6e0b338bcea3292d2911df111c86bac1b92de415">
+  <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+</head>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="http://localhost:4000/">Xiong Qiao</a></h1>
+      <img src="/assets/img/profile.jpg" alt="Profile" />
+    </header>
 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
+    <div class="main">
+      <!-- About me -->
+      <section id="about">
+        <h2 id="about">About Me</h2>
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
+        <p>
+          I'm currently a financial software engineer at <b>Bloomberg</b>, working on building pricing pipeline
+          for fixed income securities. I reside in <i>New York City</i> now. Lived in <i>Yichang</i>, <i>Wuhan</i>,
+          <i>Berkeley</i>, <i>Shenzhen</i>, <i>San Francisco</i>.
+        </p>
 
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-      </header>
-      <section>
-
-      {{ content }}
+        <p>
+          My academic interests include deep learning, computer vision, and autonomous driving.
+        </p>
 
       </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
+      <!-- Education -->
+      <section id="education">
+        <h2 id="education">Education</h2>
+
+        <div class='tableContainer'>
+
+          <div class="tableRow">
+            <img src="/assets/img/berkeley.png" width="96px" height="96px" />
+            <span class="tableText">
+              <p class="educationTable">
+                <b>Aug. 2018 - May 2019</b>, <i><b>University of California,
+                    Berkeley</b></i><br>
+                M.Eng. in Computer Science
+              </p>
+            </span>
+          </div>
+
+          <div class='tableRow'>
+            <img src="/assets/img/hust.png" width="96px" height="72px" />
+            <span class="tableText">
+              <p class="educationTable">
+                <b>Sept. 2014 - Jun. 2018</b>, <i><b>Huazhong University of Science and
+                    Technology</b></i><br>
+                B.Eng. in Computer Science
+              </p>
+            </span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section id="work">
+        <h2 id="work">Work Experience</h2>
+
+        <div class='tableContainer'>
+          <div class="tableRow">
+            <img src="/assets/img/bloomberg.jpeg" width="96px" height="50px" />
+            <span class="tableText">
+              <p class="workTable">
+                <i><b><a href="https://www.bloomberg.com/">Bloomberg L.P.</a></b></i><br>
+                <b>Financial Software Engineer</b><br>
+                Jul. 2019 - Present, <i>Manhattan, NY</i><br>
+                <a href="https://www.bloomberg.com/professional/product/pricing-data/">Bloomberg Valuation Service</a>
+              </p>
+            </span>
+          </div>
+        </div>
+
+        <div class='tableRow'>
+          <img src="/assets/img/tencent.png" width="96px" height="54px" />
+          <span class="tableText">
+            <p class="workTable">
+              <i><b><a href="https://www.tencent.com/">Tencent</a></b></i><br>
+              <b>Machine Learning Research Intern</b><br>
+              Mar. 2018 - Jun. 2018, <i>Shenzhen, China</i><br>
+              <a href="https://ai.qq.com/hr/youtu.shtml">Tencent Youtu Lab</a>
+            </p>
+          </span>
+        </div>
+
+      </section>
+
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
-  </body>
+
+    <footer>
+      <p>
+        <!-- <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small> -->
+        <ul class="copyright">
+          <small>&copy; Xiong Qiao</small>
+        </ul>
+      </p>
+    </footer>
+  </div>
+  <script src="/assets/js/scale.fix.js"></script>
+
+</body>
+
 </html>
