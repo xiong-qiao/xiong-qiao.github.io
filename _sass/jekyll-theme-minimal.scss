@@ -290,11 +290,6 @@ div.tableRow {
   display: table-row;
 }
 
-span.tableText {
-  display: table-cell;
-  vertical-align: top;
-}
-
 div.tableRow img {
   display: table-cell;
   vertical-align: top;
@@ -304,6 +299,10 @@ div.tableRow img {
 div.tableRow p {
   display: table-cell;
   vertical-align: top;
+}
+
+#work div.tableRow p {
+  padding: 0px 0px 10px 0px;
 }
 
 p.educationTable {
