@@ -60,6 +60,17 @@ a:hover small {
   margin:0 auto;
 }
 
+.image.avatar {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.image.avatar img {
+  border-radius: 100%;
+  display: block;
+  width: 70%;
+}
+
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
@@ -290,10 +301,20 @@ div.tableRow img {
   padding: 0px 20px 10px 0px;
 }
 
+div.tableRow p {
+  display: table-cell;
+  vertical-align: top;
+}
+
 p.educationTable {
   line-height: 2.5;
 }
 
 p.workTable {
   line-height: 1.5;
+}
+
+ul.copyright {
+  list-style-type: none;
+  font-size: 12px;
 }
